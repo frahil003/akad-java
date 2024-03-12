@@ -10,19 +10,26 @@ public class Person // Klassendeklaration der Klasse Person
 	private String name;	// privates Datenfeld name
 	private String vorname;	// privates Datenfeld vorname
 	
+	public Person(String name, String vorname) {
+		this.name = name;
+		this.vorname = vorname;
+	}
+	
 	/**	die Methode setName() setzt den Namen der Person
 	 *	@param n Name der Person
 	 */
-	public void setName(String n) {
-		name = n;
-	}
+	
+	/*public void setName(String name) {
+	*	this.name = name;
+	}*/
 	
 	/**	die Methode setVorname() setzt den Vornamen der Person
 	 *	@param v Vornameame der Person
 	 */
-	public void setVorname(String v) {
-		vorname = v;
-	}
+	
+	/*public void setVorname(String vorname) {
+	*	this.vorname = vorname;
+	}*/
 	
 	/**	die Methode getName() gibt den Namen der Person zurück
 	 *	@return Name der Person vom Typ String.
@@ -36,5 +43,9 @@ public class Person // Klassendeklaration der Klasse Person
 	 */
 	public String getVorname() {
 			return vorname;
+	}
+	
+	public String toString() {
+		return vorname + " " + name;
 	}
 }
