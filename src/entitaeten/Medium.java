@@ -5,7 +5,7 @@ package entitaeten;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Medium {
+public class Medium implements Comparable<Medium>{
 	protected String titel;
 	protected String unterTitel;
 	protected String mediumNummer;
@@ -56,6 +56,14 @@ public class Medium {
 	public String toString()
 	{
 		return titel + " : " + unterTitel + " : " + mediumNummer + " : " + anzahlExemplare;
+	}
+	
+	public int compareTo(Medium medium)
+	{
+		// die Methode compareToIgnoreCase() ist in der Klasse
+		// String implementiert und liefert als Vergleichsergebnis
+		// -1, 0 oder 1
+		return titel.compareToIgnoreCase(medium.toString());
 	}
 
 }
