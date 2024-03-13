@@ -3,6 +3,7 @@
 package entitaeten;
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Medium {
 	protected String titel;
@@ -27,10 +28,24 @@ public class Medium {
 		System.out.print("Bitte geben Sie den Untertitel ein: ");
 		unterTitel = eingabe.nextLine();
 		
-		System.out.print("Bitte geben Sie Exemplare ein: ");
-		anzahlExemplare = eingabe.nextInt();
-		
-		eingabe.nextLine();		
+		while (true)
+		{
+			try
+			{
+				System.out.print("Bitte geben Sie Exemplare ein: ");
+				anzahlExemplare = eingabe.nextInt();
+				break;				
+			}
+			catch (InputMismatchException ex)
+			{
+				System.out.println("Falsche eingabe!");
+				System.out.println("Bitte eine Zah eingeben!");
+			}
+			finally
+			{
+				eingabe.nextLine(); // Zeilenumbruch einlesen
+			}
+		}			
 	}
 	
 //	public void ausgeben() {

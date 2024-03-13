@@ -9,10 +9,11 @@ public class Buecherverwaltung {
 	
 	public void auswahlAnzeigen()
 	{
-		System.out.println("\nBitte Zahl und dann RETURN eingeben:");
+		System.out.println("\nAuswahlmenü:");
 		System.out.println("<1> Buch anlegen");
 		System.out.println("<2> Bestand ausgeben");
 		System.out.println("<3> Beenden");
+		System.out.print("\nBitte Zahl eingeben und mit RETURN bestätigen:");
 		auswahlAuswerten();
 	}
 	
@@ -37,6 +38,7 @@ public class Buecherverwaltung {
 				break;
 			}
 			case 3:
+				System.out.println("Programm BEENDET!!!");
 				break;
 			default:
 				System.out.println("Falsche Eingabe");
@@ -47,6 +49,11 @@ public class Buecherverwaltung {
 	{
 		for(int i = 0; i < Buch.getBestand(); i++)
 			System.out.println(arr[i]);
+	}
+	
+	public static void clearScreen() {
+	    System.out.print("\033[H\033[2J");
+	    System.out.flush();
 	}
 	
 	public static void main(String args[])
