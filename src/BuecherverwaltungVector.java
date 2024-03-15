@@ -56,7 +56,7 @@ public class BuecherverwaltungVector {
 	
 	public static void main(String args[])
 	{
-		Buecherverwaltung bibliothek = new Buecherverwaltung();
+		BuecherverwaltungVector bibliothek = new BuecherverwaltungVector();
 		bibliothek.auswahlAnzeigen();
 	}
 }

@@ -63,7 +63,7 @@ public class Medium implements Comparable<Medium>{
 		// die Methode compareToIgnoreCase() ist in der Klasse
 		// String implementiert und liefert als Vergleichsergebnis
 		// -1, 0 oder 1
-		return titel.compareToIgnoreCase(medium.toString());
+		return titel.compareToIgnoreCase(medium.titel);
 	}
 
 }
