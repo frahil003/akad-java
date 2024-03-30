@@ -11,8 +11,7 @@ public class Medium implements Comparable<Medium>{
 	protected String mediumNummer;
 	protected int anzahlExemplare;
 	
-	// Konstruktor für die Klasse zur Initialisierung
-	// der Datenfelder
+	// Konstruktor für die Klasse zur Initialisierung der Datenfelder
 	public Medium(String titel, String unterTitel, String mediumNummer, int anzahlExemplare) {
 		this.titel = titel;
 		this.unterTitel = unterTitel;
