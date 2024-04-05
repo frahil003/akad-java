@@ -38,7 +38,7 @@ public class Medium implements Comparable<Medium>{
 			catch (InputMismatchException ex)
 			{
 				System.out.println("Falsche eingabe!");
-				System.out.println("Bitte eine Zah eingeben!");
+				System.out.println("Bitte eine Zahl eingeben!");
 			}
 			finally
 			{
@@ -47,10 +47,9 @@ public class Medium implements Comparable<Medium>{
 		}			
 	}
 	
-//	public void ausgeben() {
-//		System.out.println("[Medium] " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
-//		
-//	}
+	//	public void ausgeben() {
+	//		System.out.println("[Medium] " + titel + " mit Mediumnummer: " + mediumNummer + ", Bestand: " + anzahlExemplare);
+	//	}
 	
 	public String toString()
 	{
@@ -59,9 +58,8 @@ public class Medium implements Comparable<Medium>{
 	
 	public int compareTo(Medium medium)
 	{
-		// die Methode compareToIgnoreCase() ist in der Klasse
-		// String implementiert und liefert als Vergleichsergebnis
-		// -1, 0 oder 1
+		// die Methode compareToIgnoreCase() ist in der Klasse String
+		// implementiert und liefert als Vergleichsergebnis -1, 0 oder 1
 		return titel.compareToIgnoreCase(medium.titel);
 	}
 

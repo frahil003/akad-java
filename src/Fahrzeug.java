@@ -1,4 +1,5 @@
 // Datei: Fahrzeug.java
+// Dummy change
 
 public class Fahrzeug {
 	private String kennzeichen;
